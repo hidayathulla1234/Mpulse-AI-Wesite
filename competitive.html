@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Competitive Exams Coaching | MPULSE Career Institute</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #e74c3c;
+            --accent-color: #3498db;
+            --light-color: #ecf0f1;
+        }
+         .logo-text-combo {
+    display: flex;
+    align-items: center;
+    position: relative; /* Added for absolute positioning */
+}
+
+.logo-image {
+    height: 38px;
+    margin-right: -4px; /* Increased negative margin */
+    margin-left: -30px;
+    position: relative; /* For z-index to work */
+    z-index: 1; /* Ensure logo stays above */
+}
+
+.brand-text {
+    font-weight: 600;
+    font-size: 1.5rem;
+    white-space: nowrap;
+    letter-spacing: -0.5px;
+    position: relative;
+    margin-left: -35px;
+    margin-top: 10px; /* Pull text from left side too */
+}
+        
+        .hero-competitive {
+            background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), 
+                        url('https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+        }
+        
+        .exam-card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            margin-bottom: 20px;
+        }
+        
+        .exam-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .exam-card.JEE {
+            border-top: 5px solid #e74c3c;
+        }
+        
+        .exam-card.CET {
+            border-top: 5px solid #3498db;
+        }
+        
+        .exam-card.ACET {
+            border-top: 5px solid #2ecc71;
+        }
+        
+        .exam-card.MEET {
+            border-top: 5px solid #9b59b6;
+        }
+        
+        .success-item {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        
+        .success-item h2 {
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+        
+        .btn-primary {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+        }
+        
+        .btn-primary:hover {
+            background-color: #c0392b;
+            border-color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+            <div class="logo-text-combo">
+                <img src="logo.png" alt="M Logo" height="38" class="logo-image">
+                <span class="brand-text"><span style="color: #3cb3ad;">PULSE</span> CAREER INSTITUTE</span>
+            </div>
+        </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="medical.html">Medical</a></li>
+                    <li class="nav-item"><a class="nav-link" href="IIT-JEE.html">IIT-JEE</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tuition.html">Tuition</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#scholarships">Scholarships</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                </ul>
+                <a href="#enroll" class="btn btn-danger ms-3">Apply Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-competitive">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-4">Competitive Exams Coaching</h1>
+                    <p class="lead mb-4">Comprehensive preparation for JEE, CET, MEET, ACET and other engineering entrance exams</p>
+                    <a href="index.html#admission" class="btn btn-light btn-lg px-4 me-2">Enroll Now</a>
+                    <a href="#exams" class="btn btn-outline-light btn-lg px-4">View Exams</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exams Offered -->
+    <section id="exams" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Exams We Prepare You For</h2>
+                <p class="lead">Comprehensive coaching for various competitive exams</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="exam-card JEE card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-calculator fa-3x mb-3 text-danger"></i>
+                            <h4 class="card-title">JEE (Mains & Advanced)</h4>
+                            <p class="card-text">Complete preparation for India's premier engineering entrance exam</p>
+                            <a href="#jee" class="btn btn-outline-danger">Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="exam-card CET card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-university fa-3x mb-3 text-primary"></i>
+                            <h4 class="card-title">Karnataka CET</h4>
+                            <p class="card-text">Specialized coaching for Karnataka's common entrance test</p>
+                            <a href="#cet" class="btn btn-outline-primary">Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="exam-card MEET card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-atom fa-3x mb-3" style="color: #9b59b6;"></i>
+                            <h4 class="card-title">MEET</h4>
+                            <p class="card-text">Focused preparation for Manipal Engineering Entrance Test</p>
+                            <a href="#meet" class="btn btn-outline-secondary">Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="exam-card ACET card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-rocket fa-3x mb-3 text-success"></i>
+                            <h4 class="card-title">ACET</h4>
+                            <p class="card-text">Comprehensive coaching for Amrita Engineering Entrance Exam</p>
+                            <a href="#acet" class="btn btn-outline-success">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Structure -->
+    <section id="structure" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Program Structure</h2>
+                <p class="lead">Our systematic approach to competitive exam preparation</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6">
+                    <h4 class="mb-3">Classroom Program Features</h4>
+                    <ul class="list-group mb-4">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <span><i class="fas fa-chalkboard-teacher me-2 text-primary"></i> 200+ hours of classroom teaching per subject</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <span><i class="fas fa-book me-2 text-primary"></i> Comprehensive study material</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <span><i class="fas fa-question-circle me-2 text-primary"></i> Daily doubt clearing sessions</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <span><i class="fas fa-tasks me-2 text-primary"></i> Weekly practice tests</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <span><i class="fas fa-chart-line me-2 text-primary"></i> Performance analysis & feedback</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- <div class="col-lg-6">
+                    <h4 class="mb-3">Daily Schedule (Class 11th & 12th)</h4>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead class="table-primary">
+                                <tr>
+                                    <th>Time</th>
+                                    <th>Activity</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>8:00 AM - 9:30 AM</td>
+                                    <td>Physics Theory</td>
+                                </tr>
+                                <tr>
+                                    <td>9:30 AM - 10:00 AM</td>
+                                    <td>Break</td>
+                                </tr>
+                                <tr>
+                                    <td>10:00 AM - 11:30 AM</td>
+                                    <td>Chemistry Theory</td>
+                                </tr>
+                                <tr>
+                                    <td>11:30 AM - 1:00 PM</td>
+                                    <td>Mathematics Theory</td>
+                                </tr>
+                                <tr>
+                                    <td>1:00 PM - 2:00 PM</td>
+                                    <td>Lunch Break</td>
+                                </tr>
+                                <tr>
+                                    <td>2:00 PM - 3:30 PM</td>
+                                    <td>Problem Solving Session</td>
+                                </tr>
+                                <tr>
+                                    <td>3:30 PM - 5:00 PM</td>
+                                    <td>Test/Doubt Clearing</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Exam Details -->
+    <section id="exam-details" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Exam Preparation Details</h2>
+                <p class="lead">Specialized coaching for each exam</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-12 mb-5" id="jee">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-calculator fa-2x text-danger me-3"></i>
+                                <h3 class="mb-0">JEE (Mains & Advanced)</h3>
+                            </div>
+                            <p>Our JEE program is designed to provide comprehensive coverage of the entire syllabus with special emphasis on problem-solving techniques and time management strategies.</p>
+                            
+                            <h5 class="mt-4">Key Features:</h5>
+                            <ul>
+                                <li>Complete coverage of Class 11 & 12 Physics, Chemistry, and Mathematics</li>
+                                <li>Special focus on JEE Advanced level problems</li>
+                                <li>Regular full-length mock tests with detailed analysis</li>
+                                <li>Chapter-wise question banks with 5000+ practice problems</li>
+                                <li>Personalized mentorship and doubt clearing sessions</li>
+                            </ul>
+                            
+                            <h5 class="mt-4">Syllabus Coverage:</h5>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h6>Physics</h6>
+                                    <ul>
+                                        <li>Mechanics</li>
+                                        <li>Thermodynamics</li>
+                                        <li>Electromagnetism</li>
+                                        <li>Optics</li>
+                                        <li>Modern Physics</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <h6>Chemistry</h6>
+                                    <ul>
+                                        <li>Physical Chemistry</li>
+                                        <li>Inorganic Chemistry</li>
+                                        <li>Organic Chemistry</li>
+                                        <li>Coordination Compounds</li>
+                                        <li>Biomolecules</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <h6>Mathematics</h6>
+                                    <ul>
+                                        <li>Algebra</li>
+                                        <li>Calculus</li>
+                                        <li>Coordinate Geometry</li>
+                                        <li>Trigonometry</li>
+                                        <li>Probability</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-12 mb-5" id="cet">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-university fa-2x text-primary me-3"></i>
+                                <h3 class="mb-0">Karnataka CET</h3>
+                            </div>
+                            <p>Our specialized CET program focuses on the specific pattern and syllabus of the Karnataka Common Entrance Test, with additional emphasis on Mathematics for engineering aspirants.</p>
+                            
+                            <h5 class="mt-4">Key Features:</h5>
+                            <ul>
+                                <li>Complete coverage of CET syllabus (Physics, Chemistry, Mathematics, Biology)</li>
+                                <li>Special focus on Karnataka PUC syllabus alignment</li>
+                                <li>Previous year question paper analysis and pattern recognition</li>
+                                <li>Time management strategies for CET exam</li>
+                                <li>Regular mock tests with CET-specific marking scheme</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-12" id="meet">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-atom fa-2x me-3" style="color: #9b59b6;"></i>
+                                <h3 class="mb-0">MEET (Manipal)</h3>
+                            </div>
+                            <p>Our MEET program is tailored to help students crack the Manipal Engineering Entrance Test with specialized coaching in all subjects and test-taking strategies.</p>
+                            
+                            <h5 class="mt-4">Key Features:</h5>
+                            <ul>
+                                <li>Complete MEET syllabus coverage</li>
+                                <li>Focus on application-based questions</li>
+                                <li>Special workshops for English and General Aptitude sections</li>
+                                <li>Regular full-length MEET mock tests</li>
+                                <li>Performance analysis and improvement plans</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Metrics -->
+    <section id="success" class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Our Success Metrics</h2>
+                <p class="lead">Proven track record in competitive exams</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="success-item">
+                        <h2>150+</h2>
+                        <p>JEE Advanced Qualifiers</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 mb-4">
+                    <div class="success-item">
+                        <h2>95%</h2>
+                        <p>CET Rank Under 5000</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 mb-4">
+                    <div class="success-item">
+                        <h2>80+</h2>
+                        <p>MEET Top 100 Rankers</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 mb-4">
+                    <div class="success-item">
+                        <h2>200+</h2>
+                        <p>Engineering College Admissions</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-light">View Our Toppers</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enrollment Form -->
+<!--     <section id="enroll" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow">
+                        <div class="card-body p-4">
+                            <h3 class="card-title text-center mb-4">Enroll in Competitive Program</h3>
+                            <form id="competitiveForm" action="https://formsubmit.co/your-email@mpulse.edu.in" method="POST">
+                                <input type="hidden" name="_subject" value="New Competitive Program Enrollment">
+                                <input type="hidden" name="_template" value="table">
+                                <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+                                
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="cName" class="form-label">Full Name</label>
+                                        <input type="text" class="form-control" id="cName" name="name" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="cEmail" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="cEmail" name="email" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="cPhone" class="form-label">Phone Number</label>
+                                        <input type="tel" class="form-control" id="cPhone" name="phone" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="cExam" class="form-label">Exam Preparing For</label>
+                                        <select class="form-select" id="cExam" name="exam" required>
+                                            <option value="">Select Exam</option>
+                                            <option value="JEE">JEE (Mains & Advanced)</option>
+                                            <option value="CET">Karnataka CET</option>
+                                            <option value="MEET">MEET</option>
+                                            <option value="ACET">ACET</option>
+                                            <option value="Other">Other Engineering Entrance</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="cClass" class="form-label">Current Class</label>
+                                    <select class="form-select" id="cClass" name="class" required>
+                                        <option value="">Select Class</option>
+                                        <option value="Class 11">Class 11</option>
+                                        <option value="Class 12">Class 12</option>
+                                        <option value="Dropper">Dropper</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="cMessage" class="form-label">Any specific requirements or questions?</label>
+                                    <textarea class="form-control" id="cMessage" name="message" rows="3"></textarea>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-danger btn-lg px-5">Submit Application</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h4>MPULSE CAREER INSTITUTE</h4>
+                    <p>A Step Towards Your Dream Career</p>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/mpulse_career_institute25/?utm_source=qr&igsh=MXNwZ2kydG1uejJmaQ%3D%3D#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Contact Info</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Bengaluru, Karnataka</li>
+                        <li><i class="fas fa-phone me-2"></i> +91 9164428448 or +91 9964476659</li>
+                        <li><i class="fas fa-envelope me-2"></i>mpulseinstitutions@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="medical.html" class="text-white">Medical Program</a></li>
+                        <li><a href="competitive.html" class="text-white">Competitive Exams</a></li>
+                        <li><a href="tuition.html" class="text-white">Tuition Classes</a></li>
+                        <li><a href="index.html#scholarships" class="text-white">Scholarships</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 MPULSE Career Institute. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Form submission handling
+        document.getElementById('competitiveForm').addEventListener('submit', function(e) {
+            // Form will be submitted to FormSubmit.co which will email the data
+            // You can add additional client-side validation here if needed
+            alert('Thank you for your application! We will contact you soon.');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

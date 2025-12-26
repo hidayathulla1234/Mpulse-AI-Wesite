@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MPULSE Career Institute - Your Path to Success</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #e74c3c;
+            --accent-color: #3498db;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+        }
+
+        .logo-text-combo {
+    display: flex;
+    align-items: center;
+    position: relative; /* Added for absolute positioning */
+}
+
+.logo-image {
+    height: 38px;
+    margin-right: -4px; /* Increased negative margin */
+    margin-left: -30px;
+    position: relative; /* For z-index to work */
+    z-index: 1; /* Ensure logo stays above */
+}
+
+.brand-text {
+    font-weight: 600;
+    font-size: 1.5rem;
+    white-space: nowrap;
+    letter-spacing: -0.5px;
+    position: relative;
+    margin-left: -35px;
+    margin-top: 10px; /* Pull text from left side too */
+}
+    /* WhatsApp Floating Button */
+    .whatsapp-float {
+        position: fixed;
+        bottom: 60px;
+        right: 30px;
+        width: 60px;
+        height: 60px;
+        background-color: #25D366;
+        color: #FFF;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+    }
+    
+    .whatsapp-float:hover {
+        background-color: #128C7E;
+        transform: scale(1.1);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+    
+    .whatsapp-float i {
+        margin-top: 2px;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      /* Navbar */
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 60px;
+        background: white;
+      }
+      
+      .navbar img {
+        height: 40px;
+      }
+      
+      .navbar nav a {
+        margin-left: 25px;
+        text-decoration: none;
+        color: #333;
+        font-size: 14px;
+        font-weight: 500;
+      }
+      
+
+
+        .hero-section {
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+        }
+        .hero {
+            height: 85vh;
+            background-image: url("ai-background.jpg"); /* Your image */
+            background-size: cover;
+            background-position: center;
+            position: relative;
+          }
+          .hero {
+            height: 100vh;
+            background-image: url("ai-background.jpg"); /* your image */
+            background-size: cover;
+            background-position: center;
+            position: relative;
+          
+            /* 🔥 CENTER CONTENT */
+            display: flex;
+            align-items: center;      /* vertical center */
+            justify-content: center;  /* horizontal center */
+            text-align: center;
+          }
+          
+          /* Overlay */
+          .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.5);
+          }
+          
+          /* Content */
+          .hero-content {
+            position: relative;
+            max-width: 800px;
+            color: white;
+            padding: 20px;
+          }
+          
+          .hero-content h1 {
+            font-size: 52px;
+            margin-bottom: 20px;
+          }
+          
+          .hero-content span {
+            color: #ff8c00;
+          }
+          
+          .hero-content p {
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: 30px;
+            opacity: 0.9;
+          }
+          
+          /* Button */
+          .btn {
+            background: #004aad;
+            color: white;
+            padding: 14px 32px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 15px;
+          }
+          
+          
+          
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            opacity: 0;
+            transition: opacity 1.5s ease-in-out;
+            z-index: -1;
+        }
+
+        .hero-bg.active {
+            opacity: 1;
+        }
+       
+
+        
+        
+          
+          .hero-content h1 span {
+            color: #ff8c00;
+          }
+          .hero-content p {
+            font-size: 15px;
+            line-height: 1.7;
+            margin-bottom: 30px;
+            opacity: 0.9;
+          } 
+          .hero-text {
+            font-size: 42px;
+            color: white;
+            text-align: center;
+          }
+          
+          /* container hides overflow */
+          .slide-container {
+            display: inline-block;
+            height: 1.2em;
+            overflow: hidden;
+            vertical-align: bottom;
+          }
+          
+          #slide-word {
+            color: orange;
+            font-weight: bold;
+            display: inline-block;
+            transform: translateY(0);
+            transition: transform 0.4s ease, opacity 0.4s ease;
+          }
+          
+          #changing-word {
+            color: #ff8c00;
+            font-weight: bold;
+            transition: opacity 0.5s ease-in-out;
+          }
+          
+
+        
+
+        .nav-pills .nav-link.active {
+            background-color: var(--secondary-color);
+        }
+
+        .program-card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            margin-bottom: 20px;
+        }
+
+        .program-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: orange;
+            margin-bottom: 15px;
+        }
+
+        .btn-primary {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+        }
+
+        .btn-primary:hover {
+            background-color: #c0392b;
+            border-color: #c0392b;
+        }
+        .btn {
+            display: inline-block;
+            background: #004aad;
+            color: white;
+            padding: 12px 28px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+          }
+          
+          .btn:hover {
+            background: orange;
+          }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 30px 0;
+        }
+
+        .testimonial-card {
+            background-color: var(--light-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+
+        /* About Section Styles */
+        .about-section {
+            padding: 80px 0;
+            background-color: #f8f9fa;
+        }
+
+        .director-image {
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 100%;
+            height: auto;
+        }
+
+        .director-message {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .director-message h2 {
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .director-message h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 3px;
+            background-color: var(--accent-color);
+        }
+
+
+                     /* Why Choose MPULSE Section */
+#why-us {
+    background-color: #f9fafb;
+}
+
+/* Section Title */
+#why-us h2 {
+    font-size: 34px;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+/* Card */
+#why-us .card {
+    border-radius: 15px;
+    background: #ffffff;
+    transition: all 0.3s ease;
+}
+
+/* Card Hover Effect */
+#why-us .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Icon */
+.feature-icon {
+    font-size: 42px;
+    color: #2563eb; /* modern blue */
+    margin-bottom: 18px;
+}
+
+/* Card Title */
+#why-us .card-title {
+    font-size: 19px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 12px;
+}
+
+/* Card Text */
+#why-us .card-text {
+    font-size: 16px;
+    color:black;
+    line-height: 1.7;
+}
+
+
+        
+
+                            /*our values section*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f7f9fc;
+}
+
+/* Section */
+.values-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Heading */
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #f97316; /* orange */
+    margin-bottom: 50px;
+}
+
+/* Grid */
+.values-grid {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+/* Card */
+.value-card {
+    background: #ffffff;
+    padding: 35px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-8px);
+}
+
+/* Icon */
+.icon {
+    font-size: 32px;
+    color: #0f4c75; /* dark blue */
+    margin-bottom: 15px;
+}
+
+/* Card Title */
+.value-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #111;
+}
+
+/* Card Text */
+.value-card p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+            /* Admission Form Styles */
+        .required-field::after {
+            content: '*';
+            color: #e78038;
+            margin-left: 4px;
+        }
+
+        .form-label {
+            font-weight: 500;
+        }
+
+        .form-section-title {
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .admission-form-container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+
+                .is-invalid {
+    border-color: #dc3545 !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right calc(0.375em + 0.1875rem) center;
+    background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+
+/* Loading Spinner */
+.spinner-border {
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+    </style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "MPULSE Career Institute",
+  "url": "https://mpulse.org.in",
+  "logo": "https://mpulse.org.in/logo.jpg",
+  "sameAs": [
+    "https://www.instagram.com/mpulse_career_institute25/"
+  ]
+  
+    
+  
+}
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const words = ["Think", "Build", "Innovate", "Excel"];
+      let index = 0;
+      const word = document.getElementById("slide-word");
+  
+      setInterval(() => {
+        // slide up & fade out
+        word.style.transform = "translateY(-100%)";
+        word.style.opacity = "0";
+  
+        setTimeout(() => {
+          index = (index + 1) % words.length;
+          word.textContent = words[index];
+  
+          // reset position below
+          word.style.transform = "translateY(100%)";
+  
+          setTimeout(() => {
+            // slide into view
+            word.style.opacity = "1";
+            word.style.transform = "translateY(0)";
+          }, 50);
+        }, 400);
+  
+      }, 2000);
+    });
+  </script>
+  
+
+
+</head>
+
+<body>
+    <!-- Navigation -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <div class="logo-text-combo">
+                <img src="logo.png" alt="M Logo" height="38" class="logo-image">
+                <span class="brand-text"><span style="color: #3cb3ad;">PULSE</span> CAREER INSTITUTE</span>
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#About Us">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Courses">Courses</a></li>
+                <li class="nav-item"><a class="nav-link" href="#scholarships">Scholarships</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Contact Us">Contact Us</a></li>
+            </ul>
+            <a href="#admission" class="btn btn-danger ms-3">Apply Now</a>
+            <a href="login.html" class="btn btn-danger ms-3">Login</a>
+        </div>
+    </div>
+</nav>
+
+    <!-- Hero Section with Auto-scrolling Backgrounds -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay">
+            <h3 class="hero-text">
+                Empowering Minds to
+                <span class="slide-container">
+                  <span id="slide-word">Think</span>
+                  
+                </span>
+                With AI
+              </h3>
+              
+              
+             
+              
+              <p>
+                Mpulse  empowers learners by bridging the global AI literacy gap
+                through practical, ethical, and future-focused AI education
+                designed for students, educators, and institutions.
+              </p>
+              
+
+        </div>
+        <!-- Background images that will cycle -->
+        <div class="hero-bg active" style="background-image: url('Hero/img3.jpg');"></div>
+        
+        <!-- <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div> -->
+
+        <div class="container hero-content" style="margin-top: 20%;">
+<!--             <h1 class="display-3 fw-bold mb-4">A Step Towards Your Dream Career</h1>
+            <p class="lead mb-5">Begin your journey to success with MPULSE Career Institute</p> -->
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#programs" class="btn btn-light btn-lg px-4">Explore Courses</a>
+               
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <img src="Director/img 2.jpg" alt="Director of MPULSE Career Institute" class="director-image">
+                </div>
+                <div class="col-lg-7">
+                    <div class="director-message">
+                        <h2>Our Mission</h2>
+                        <p>MPULSE is dedicated to transforming AI education by making it accessible, practical, and impactful.
+                             We empower learners, educators, and professionals with hands-on AI skills that foster creativity,
+                              computational thinking, and responsible innovation. Through engaging pedagogy and real-world applications,
+                               we prepare every individual to confidently
+                             navigate and shape the future of Artificial Intelligence.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="courses-section">
+        <div class="courses-container">
+      
+          <div class="course-card">
+            <!-- Card 1 content -->
+          </div>
+      
+          <div class="course-card">
+            <!-- Card 2 content -->
+          </div>
+      
+          <div class="course-card">
+            <!-- Card 3 content -->
+          </div>
+        </div>
+      </section>
+      
+
+      
+    <section id="Courses" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Featured Couses</h2>
+                <p class="lead">Comprehensive courses designed for your success</p>
+            </div>
+
+            <div class="row justify-content-center g-4">
+
+                <div class="col-md-3">
+                    <div class="program-card card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-user-md feature-icon"></i>
+                            <h4 class="card-title">AI Foundations</h4>
+                            <ul class="text-start ps-4">
+                                <p>🎯Grades 1-7 | ⏱️ 20 or 60 hours | 🏫 On-site at your school</p>
+                                <li>Understand AI concepts through stories, games, and hands-on activities.</li>
+                                <li>Use GenAI tools safely, creatively, and responsibly.</li>
+                                <li>Build foundational coding skills using block-based programming.</li>
+                                <li>Develop digital citizenship and ethical thinking.</li>
+                                <li>Create original projects combining creativity and AI..</li>
+                            </ul>
+                            <a href="medical.html" class="btn btn-primary mt-3">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="program-card card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-atom feature-icon"></i>
+                            <h4 class="card-title">AI Applied Learning</h4>
+                            <ul class="text-start ps-4">
+                                <p>🎯Grades 8-9| ⏱️ 20 or 60 hours | 🏫 On-site at your school</p>
+                                <li>Deepen their understanding of AI & GenAI fundamentals.</li>
+                                <li>Strengthen data literacy with machine learning concepts.</li>
+                                <li>Work with Python basics (optional age-appropriate intro).</li>
+                                <li>Create practical GenAI-powered projects.</li>
+                                <li>Explore AI applications in modern careers.</li>
+                            </ul>
+                            <a href="IIT-JEE.html" class="btn btn-primary mt-3">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="program-card card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-trophy feature-icon"></i>
+                            <h4 class="card-title">Advanced AI & Gen AI</h4>
+                            <p>🎯 Grades 10-12 | ⏱️ 20 or 60 hours | 🏫 On-site at your school</p>
+                            <li>Master advanced AI, GenAI, and data science concepts.</li>
+                            <li>Build professional digital skills (web + portfolio development, content creation).</li>
+                            <li>Develop strong prompt engineering and automation skills.</li>
+                            <li>Understand AI ethics, societal impact, and safety.</li>
+                            <a href="competitive.html" class="btn btn-primary mt-3">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Why Choose MPULSE?</h2>
+               </div>
+
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-chalkboard-teacher feature-icon"></i>
+                            <h4 class="card-title">Ethical & Future-Focused Learning</h4>
+                            <p class="card-text">We emphasize ethical AI, digital responsibility, and critical thinking, empowering learners to become not
+                                 just skilled users of AI—but responsible innovators of the future.</p>
+                               
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-book-open feature-icon"></i>
+                            <h4 class="card-title">Expert Mentors & Guidance</h4>
+                            <p class="card-text">Students learn from experienced mentors who simplify complex AI concepts
+                                 and guide them step-by-step,fostering curiosity, creativity, and confidence in every learner. </p>
+                                 
+                         </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-clipboard-check feature-icon"></i>
+                            <h4 class="card-title"> Hands-on Learning</h4>
+                            <p class="card-text">We believe the best way to learn AI is by doing. 
+                                Our programs focus on practical, project-based learning, enabling students to move beyond theory and 
+                                apply AI concepts to real-world problems with confidence.
+                                .</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-user-graduate feature-icon"></i>
+                            <h4 class="card-title"> Age-Appropriate AI Education</h4>
+                            <p class="card-text">Our curriculum is carefully designed to suit different age groups. 
+                                We introduce AI concepts in a safe, responsible, and engaging way, helping learners
+                                 understand technology, digital ethics, and responsible AI use from an early stage..</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-handshake feature-icon"></i>
+                            <h4 class="card-title">Strong School Partnerships</h4>
+                            <p class="card-text">We work closely with schools to provide end-to-end AI learning solutions, 
+                                including curriculum integration, teacher support, student training, and long-term
+                                 academic guidance—ensuring sustainable and impactful AI education..
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-rocket feature-icon"></i>
+                            <h4 class="card-title">Industry-Relevant Curriculum</h4>
+                            <p class="card-text">Our courses are aligned with current industry trends and future skill requirements, 
+                                ensuring learners gain relevant, job-ready
+                                 AI knowledge that prepares them for higher education and careers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Values</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="values-section">
+    <h2 class="section-title">Our Values</h2>
+
+    <div class="values-grid">
+
+        <div class="value-card">
+            <div class="icon">⭐</div>
+            <h3>Innovation with Purpose</h3>
+            <p>
+                We embrace creativity and experimentation, ensuring every
+                technological advancement serves a meaningful human and
+                societal goal.
+            </p>
+        </div>
+
+        <div class="value-card">
+            <div class="icon">⭐</div>
+            <h3>Lifelong Learning</h3>
+            <p>
+                We inspire curiosity that never ends empowering every learner
+                to adapt, evolve, and lead confidently in an ever-changing world.
+            </p>
+        </div>
+
+        <div class="value-card">
+            <div class="icon">⭐</div>
+            <h3>Accessibility</h3>
+            <p>
+                We believe AI education should be within everyone’s reach
+                regardless of geography, background, or means.
+            </p>
+        </div>
+
+        <div class="value-card">
+            <div class="icon">⭐</div>
+            <h3>Integrity</h3>
+            <p>
+                We uphold the ethical use of AI and foster a culture of
+                transparency, fairness, and accountability in all our learning
+                experiences.
+            </p>
+        </div>
+
+        <div class="value-card">
+            <div class="icon">⭐</div>
+            <h3>Collaboration</h3>
+            <p>
+                We grow stronger through partnerships uniting educators,
+                institutions, and learners to co-create knowledge and share impact.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>
+
+
+
+
+
+   
+
+    <!-- Contact Section -->
+<!-- Contact Section -->
+<section id="contact" class="py-5 bg-dark text-white">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Contact Us</h2>
+            <p class="lead">Get in touch with our team</p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card shadow">
+                    <div class="card-body p-4">
+                        <div class="row">
+                            <div class="col-lg-5 mb-4 mb-lg-0">
+                                <h3 class="mb-4">Our Information</h3>
+                                <div class="mb-4">
+                                    <h5><i class="fas fa-map-marker-alt me-2"></i> Address</h5>
+                                    <p>31, 3rd Cross Rd, beside Navachethana Hospital, RWF West Colony, Yelahanka New Town,
+                                        Bengaluru, Karnataka 560063</p>
+                                </div>
+                                <div class="mb-4">
+                                    <h5><i class="fas fa-phone me-2"></i> Phone</h5>
+                                    <p>+91 9164428448 or +91 9964476659</p>
+                                </div>
+                                <div class="mb-4">
+                                    <h5><i class="fas fa-envelope me-2"></i> Email</h5>
+                                    <p>mpulseinstitutions@gmail.com</p>
+                                </div>
+                                <div class="mb-4">
+                                    <h5><i class="fas fa-clock me-2"></i> Working Hours</h5>
+                                    <p>Monday - Saturday: 8:00 AM - 8:00 PM</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <h3 class="mb-4">Send Us a Message</h3>
+                                <form id="contactForm" action="https://formsubmit.co/mpulseinstitutions@gmail.com" method="POST">
+                                    <!-- FormSubmit Configuration -->
+                                    <input type="hidden" name="_subject" value="New Contact Form Submission - MPULSE">
+                                    <input type="hidden" name="_template" value="table">
+                                    <input type="hidden" name="_next" value="https://mpulse.org.in/thank-you.html">
+                                    <input type="hidden" name="_captcha" value="false">
+
+                                    <div class="row mb-3">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="contactName" class="form-label required-field">Name</label>
+                                            <input type="text" class="form-control" id="contactName" name="Name" required>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="contactEmail" class="form-label required-field">Email</label>
+                                            <input type="email" class="form-control" id="contactEmail" name="Email" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="contactPhone" class="form-label required-field">Phone Number</label>
+                                        <input type="tel" class="form-control" id="contactPhone" name="Phone" required>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="contactSubject" class="form-label required-field">Subject</label>
+                                        <select class="form-select" id="contactSubject" name="Subject" required>
+                                            <option value="">Select Subject</option>
+                                            <option value="Admission Inquiry">Admission Inquiry</option>
+                                            <option value="Course Information">Course Information</option>
+                                            <option value="Fee Structure">Fee Structure</option>
+                                            <option value="Scholarship">Scholarship</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="contactMessage" class="form-label required-field">Message</label>
+                                        <textarea class="form-control" id="contactMessage" name="Message" rows="4" required></textarea>
+                                    </div>
+
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-danger btn-lg px-5">Send Message</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Map Section -->
+    <div class="map-container">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3885.9312881672377!2d77.5835639!3d13.103539400000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae188abe4f3cb1%3A0x78ff63839016cdc7!2s31%2C%203rd%20Cross%20Rd%2C%20beside%20Navachethan%20Hospital%2C%20RWF%20West%20Colony%2C%20Yelahanka%20New%20Town%2C%20Bengaluru%2C%20Karnataka%20560063!5e0!3m2!1sen!2sin!4v1746096948393!5m2!1sen!2sin"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h4>MPULSE CAREER INSTITUTE</h4>
+                    <p>A Step Towards Your Dream Career</p>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/mpulse_career_institute25/?utm_source=qr&igsh=MXNwZ2kydG1uejJmaQ%3D%3D#"
+                            class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-white">Home</a></li>
+                        <li><a href="#programs" class="text-white">Programs</a></li>
+                        <li><a href="#why-us" class="text-white">Why Us</a></li>
+                        <li><a href="#scholarships" class="text-white">Scholarships</a></li>
+                        <li><a href="#admission" class="text-white">Admission</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Programs</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="medical.html" class="text-white">Medical (NEET-UG)</a></li>
+                        <li><a href="competitive.html" class="text-white">Competitive Exams</a></li>
+                        <li><a href="tuition.html" class="text-white">Tuition Classes</a></li>
+                        <li><a href="foundation.html" class="text-white">Foundation Classes</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact Info</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Bengaluru, Karnataka</li>
+                        <li><i class="fas fa-phone me-2"></i> +91 9164428448 or +91 9964476659</li>
+                        <li><i class="fas fa-envelope me-2"></i> mpulseinstitutions@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 MPULSE Career Institute. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+<a href="https://wa.me/919164428448?text=Hello%20MPULSE%20Career%20Institute,%20I%20have%20a%20question%20about%20your%20courses." 
+   class="whatsapp-float" 
+   target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // ===== HERO IMAGE CYCLING =====
+    const heroBackgrounds = document.querySelectorAll('.hero-bg');
+    if (heroBackgrounds.length > 0) {
+        let currentBg = 0;
+        heroBackgrounds[0].classList.add('active');
+        
+        setInterval(() => {
+            heroBackgrounds.forEach(bg => bg.classList.remove('active'));
+            currentBg = (currentBg + 1) % heroBackgrounds.length;
+            heroBackgrounds[currentBg].classList.add('active');
+        }, 5000);
+    }
+
+    // ===== FORM SUBMISSION =====
+    const admissionForm = document.getElementById('admissionForm');
+    if (admissionForm) {
+        admissionForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            // Validate form
+            const requiredFields = this.querySelectorAll('[required]');
+            let isValid = true;
+            
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    field.classList.add('is-invalid');
+                    isValid = false;
+                }
+            });
+            
+            // Validate email format
+            const emailField = this.querySelector('[type="email"]');
+            if (emailField && !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailField.value)) {
+                emailField.classList.add('is-invalid');
+                isValid = false;
+            }
+            
+            if (!isValid) {
+                alert('Please fill all required fields correctly');
+                return;
+            }
+            
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalBtnText = submitBtn.innerHTML;
+            
+            try {
+                // Show loading state
+                submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Submitting...';
+                submitBtn.disabled = true;
+                
+                // Submit form
+                const response = await fetch(this.action, {
+                    method: 'POST',
+                    body: new FormData(this)
+                });
+                
+                // Show success message
+                alert('Thank you! Your application has been submitted successfully.\nWe will contact you shortly.');
+                this.reset();
+                
+                // Redirect if _next is set
+                const nextUrl = this.querySelector('[name="_next"]')?.value;
+                if (nextUrl) window.location.href = nextUrl;
+                
+            } catch (error) {
+                console.log('Form submission logged:', error);
+                alert('Thank you! Your information has been received.');
+                this.reset();
+            } finally {
+                submitBtn.innerHTML = originalBtnText;
+                submitBtn.disabled = false;
+            }
+        });
+        
+        // Clear validation on input
+        admissionForm.querySelectorAll('input, select, textarea').forEach(element => {
+            element.addEventListener('input', function() {
+                if (this.value.trim()) {
+                    this.classList.remove('is-invalid');
+                }
+            });
+        });
+    }
+
+    // ===== SMOOTH SCROLLING =====
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            
+            e.preventDefault();
+            const targetElement = document.querySelector(targetId);
+            
+            if (targetElement) {
+                // Close mobile menu if open
+                const navbarToggler = document.querySelector('.navbar-toggler');
+                const navbarCollapse = document.querySelector('.navbar-collapse');
+                if (navbarToggler && !navbarToggler.classList.contains('collapsed')) {
+                    new bootstrap.Collapse(navbarCollapse).hide();
+                }
+                
+                // Smooth scroll to target
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+                
+                // Update URL
+                history.pushState(null, null, targetId);
+            }
+        });
+    });
+
+    // ===== WHATSAPP BUTTON =====
+    const whatsappBtn = document.querySelector('.whatsapp-float');
+    if (whatsappBtn) {
+        whatsappBtn.addEventListener('click', function() {
+            // Track WhatsApp clicks if needed
+            console.log('WhatsApp inquiry initiated');
+        });
+    }
+});
+
+// ===== FORM FIELD DEPENDENCIES =====
+// Show NEET/JEE specific fields when class is 11th/12th
+function setupExamSpecificFields() {
+    const classSelect = document.getElementById('admissionClass');
+    const examField = document.getElementById('examPreparingFor');
+    
+    if (classSelect && examField) {
+        classSelect.addEventListener('change', function() {
+            if (this.value === '11th' || this.value === '12th' || this.value === 'Dropper') {
+                examField.closest('.mb-3').style.display = 'block';
+            } else {
+                examField.closest('.mb-3').style.display = 'none';
+            }
+        });
+        
+        // Trigger change event on load
+        classSelect.dispatchEvent(new Event('change'));
+    }
+}
+
+// Initialize on DOM load
+document.addEventListener('DOMContentLoaded', setupExamSpecificFields);
+
+// Contact Form Submission Handler
+document.getElementById('contactForm')?.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    // Validate form
+    const requiredFields = this.querySelectorAll('[required]');
+    let isValid = true;
+    
+    requiredFields.forEach(field => {
+        if (!field.value.trim()) {
+            field.classList.add('is-invalid');
+            isValid = false;
+        }
+    });
+    
+    // Validate email format
+    const emailField = this.querySelector('[type="email"]');
+    if (emailField && !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailField.value)) {
+        emailField.classList.add('is-invalid');
+        isValid = false;
+    }
+    
+    if (!isValid) {
+        alert('Please fill all required fields correctly');
+        return;
+    }
+    
+    const submitBtn = this.querySelector('button[type="submit"]');
+    const originalBtnText = submitBtn.innerHTML;
+    
+    try {
+        // Show loading state
+        submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Sending...';
+        submitBtn.disabled = true;
+        
+        // Submit form
+        const response = await fetch(this.action, {
+            method: 'POST',
+            body: new FormData(this)
+        });
+        
+        // Show success message
+        alert('Thank you! Your message has been sent successfully.\nWe will contact you shortly.');
+        this.reset();
+        
+        // Redirect if _next is set
+        const nextUrl = this.querySelector('[name="_next"]')?.value;
+        if (nextUrl) window.location.href = nextUrl;
+        
+    } catch (error) {
+        console.log('Form submission logged:', error);
+        alert('Thank you! Your message has been received.');
+        this.reset();
+    } finally {
+        submitBtn.innerHTML = originalBtnText;
+        submitBtn.disabled = false;
+    }
+});
+
+// Clear validation on input
+document.querySelectorAll('#contactForm input, #contactForm select, #contactForm textarea').forEach(element => {
+    element.addEventListener('input', function() {
+        if (this.value.trim()) {
+            this.classList.remove('is-invalid');
+        }
+    });
+});    
+    
+</script>
+</body>
+
+</html>

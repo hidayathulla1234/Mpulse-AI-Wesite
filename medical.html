@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEET-UG Medical Program | MPULSE Career Institute</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #e74c3c;
+            --accent-color: #3498db;
+            --light-color: #ecf0f1;
+        }
+         .logo-text-combo {
+    display: flex;
+    align-items: center;
+    position: relative; /* Added for absolute positioning */
+}
+
+.logo-image {
+    height: 38px;
+    margin-right: -4px; /* Increased negative margin */
+    margin-left: -30px;
+    position: relative; /* For z-index to work */
+    z-index: 1; /* Ensure logo stays above */
+}
+
+.brand-text {
+    font-weight: 600;
+    font-size: 1.5rem;
+    white-space: nowrap;
+    letter-spacing: -0.5px;
+    position: relative;
+    margin-left: -35px;
+    margin-top: 10px; /* Pull text from left side too */
+}
+        .hero-medical {
+            background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), 
+                        url('https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+        }
+        
+        .program-highlight {
+            border-left: 4px solid var(--secondary-color);
+            padding-left: 15px;
+        }
+        
+        .syllabus-item {
+            background-color: var(--light-color);
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .faculty-card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .faculty-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .btn-primary {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+        }
+        
+        .btn-primary:hover {
+            background-color: #c0392b;
+            border-color: #c0392b;
+        }
+        
+        .success-metric {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .success-metric h2 {
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+/*         .required-field::after {
+    content: '*';
+    color: #e74c3c;
+    margin-left: 4px;
+}
+.spinner-border {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.is-invalid {
+    border-color: #dc3545 !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right calc(0.375em + 0.1875rem) center;
+    background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+} */
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+            <div class="logo-text-combo">
+                <img src="logo.png" alt="M Logo" height="38" class="logo-image">
+                <span class="brand-text"><span style="color: #3cb3ad;">PULSE</span> CAREER INSTITUTE</span>
+            </div>
+        </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="IIT-JEE.html">IIT-JEE</a></li>
+                    <li class="nav-item"><a class="nav-link" href="competitive.html">Competitive</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tuition.html">Tuition</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#scholarships">Scholarships</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                </ul>
+                <a href="index.html#admission" class="btn btn-danger ms-3">Apply Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-medical">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-4">NEET-UG Medical Program</h1>
+                    <p class="lead mb-4">Comprehensive coaching for medical aspirants with integrated board preparation</p>
+                    <a href="index.html#admission" class="btn btn-light btn-lg px-4 me-2">Enroll Now</a>
+                    <a href="index.html#contact" class="btn btn-outline-light btn-lg px-4">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Highlights -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Program Highlights</h2>
+                <p class="lead">Why choose our NEET-UG program?</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="program-highlight">
+                        <h4><i class="fas fa-check-circle text-success me-2"></i> Integrated Approach</h4>
+                        <p>Board syllabus and NEET preparation combined to save time and effort. No need for separate tuitions.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="program-highlight">
+                        <h4><i class="fas fa-check-circle text-success me-2"></i> Expert Faculty</h4>
+                        <p>Learn from experienced medical professionals and top NEET educators with proven track records.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="program-highlight">
+                        <h4><i class="fas fa-check-circle text-success me-2"></i> Comprehensive Material</h4>
+                        <p>Specially designed study material covering all aspects of Physics, Chemistry, and Biology for NEET.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="program-highlight">
+                        <h4><i class="fas fa-check-circle text-success me-2"></i> Regular Assessments</h4>
+                        <p>Weekly tests, full-length mock exams, and personalized feedback to track your progress.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="program-highlight">
+                        <h4><i class="fas fa-check-circle text-success me-2"></i> Doubt Resolution</h4>
+                        <p>Daily doubt clearing sessions and one-on-one mentorship to ensure concept clarity.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="program-highlight">
+                        <h4><i class="fas fa-check-circle text-success me-2"></i> Scholarship Options</h4>
+                        <p>Up to 90% scholarship available for deserving students based on previous academic performance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Structure -->
+    <section id="structure" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Course Structure</h2>
+                <p class="lead">Our systematic approach to NEET preparation</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6">
+                    <h4 class="mb-3">For Class 11th & 12th Students</h4>
+                    <ul class="list-group mb-4">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <span><i class="fas fa-book me-2"></i> Complete NEET syllabus coverage</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <span><i class="fas fa-clock me-2"></i> 5 days/week classroom program</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <span><i class="fas fa-flask me-2"></i> Practical lab sessions</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <span><i class="fas fa-chalkboard-teacher me-2"></i> Board exam preparation integrated</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <span><i class="fas fa-tasks me-2"></i> Daily practice problems</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-6">
+                    <h4 class="mb-3">For Class 6th to 10th (Foundation)</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <span><i class="fas fa-atom me-2"></i> Basic concept building in Science</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <span><i class="fas fa-brain me-2"></i> Logical thinking development</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <span><i class="fas fa-book-open me-2"></i> School syllabus + advanced topics</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <span><i class="fas fa-medal me-2"></i> Olympiad preparation</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <span><i class="fas fa-hourglass-half me-2"></i> 3 days/week program</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- <div class="mt-5">
+                <h4 class="mb-3">Daily Schedule (Class 11th & 12th)</h4>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Time</th>
+                                <th>Activity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>8:00 AM - 9:30 AM</td>
+                                <td>Physics Theory</td>
+                            </tr>
+                            <tr>
+                                <td>9:30 AM - 10:00 AM</td>
+                                <td>Break</td>
+                            </tr>
+                            <tr>
+                                <td>10:00 AM - 11:30 AM</td>
+                                <td>Chemistry Theory</td>
+                            </tr>
+                            <tr>
+                                <td>11:30 AM - 1:00 PM</td>
+                                <td>Biology Theory</td>
+                            </tr>
+                            <tr>
+                                <td>1:00 PM - 2:00 PM</td>
+                                <td>Lunch Break</td>
+                            </tr>
+                            <tr>
+                                <td>2:00 PM - 3:30 PM</td>
+                                <td>Problem Solving Session</td>
+                            </tr>
+                            <tr>
+                                <td>3:30 PM - 5:00 PM</td>
+                                <td>Doubt Clearing / Self Study</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Syllabus -->
+    <section id="syllabus" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Syllabus Coverage</h2>
+                <p class="lead">Comprehensive preparation for NEET-UG</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="syllabus-item">
+                        <h4><i class="fas fa-atom text-danger me-2"></i> Physics</h4>
+                        <ul>
+                            <li>Mechanics</li>
+                            <li>Thermodynamics</li>
+                            <li>Electromagnetism</li>
+                            <li>Optics</li>
+                            <li>Modern Physics</li>
+                            <li>Oscillations & Waves</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="syllabus-item">
+                        <h4><i class="fas fa-flask text-primary me-2"></i> Chemistry</h4>
+                        <ul>
+                            <li>Physical Chemistry</li>
+                            <li>Inorganic Chemistry</li>
+                            <li>Organic Chemistry</li>
+                            <li>Biomolecules</li>
+                            <li>Environmental Chemistry</li>
+                            <li>Coordination Compounds</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="syllabus-item">
+                        <h4><i class="fas fa-dna text-success me-2"></i> Biology</h4>
+                        <ul>
+                            <li>Botany (Plant Physiology, Genetics)</li>
+                            <li>Zoology (Human Physiology, Reproduction)</li>
+                            <li>Biotechnology</li>
+                            <li>Ecology</li>
+                            <li>Cell Biology</li>
+                            <li>Evolution</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-outline-primary">Download Detailed Syllabus</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Faculty -->
+    <!-- <section id="faculty" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Our Expert Faculty</h2>
+                <p class="lead">Learn from the best in the field</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="faculty-card card h-100">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="card-img-top" alt="Faculty">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Dr. Ramesh Kumar</h5>
+                            <p class="text-muted">Physics Expert</p>
+                            <p class="card-text">15+ years experience, Former HOD at reputed medical college</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="faculty-card card h-100">
+                        <img src="https://randomuser.me/api/portraits/women/45.jpg" class="card-img-top" alt="Faculty">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Dr. Priya Sharma</h5>
+                            <p class="text-muted">Chemistry Expert</p>
+                            <p class="card-text">PhD in Organic Chemistry, 12+ years NEET teaching experience</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="faculty-card card h-100">
+                        <img src="https://randomuser.me/api/portraits/men/68.jpg" class="card-img-top" alt="Faculty">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Dr. Arun Patel</h5>
+                            <p class="text-muted">Botany Specialist</p>
+                            <p class="card-text">MSc, PhD in Botany, Author of 3 NEET preparation books</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="faculty-card card h-100">
+                        <img src="https://randomuser.me/api/portraits/women/72.jpg" class="card-img-top" alt="Faculty">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Dr. Neha Gupta</h5>
+                            <p class="text-muted">Zoology Specialist</p>
+                            <p class="card-text">MBBS, MD, 10+ years teaching Human Physiology</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Success Metrics -->
+    <section id="success" class="py-5 bg-danger text-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Our Success Metrics</h2>
+                <p class="lead">Proven track record of excellence</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="success-metric">
+                        <h2>98%</h2>
+                        <p>Qualification Rate</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 mb-4">
+                    <div class="success-metric">
+                        <h2>250+</h2>
+                        <p>NEET Selections</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 mb-4">
+                    <div class="success-metric">
+                        <h2>85%</h2>
+                        <p>Students with 90+ Percentile</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 mb-4">
+                    <div class="success-metric">
+                        <h2>50+</h2>
+                        <p>Top 1000 Rankers</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-light">View Our Toppers</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enrollment Form -->
+    <!-- Enrollment Form -->
+<!-- <section id="enroll" class="py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card shadow">
+                    <div class="card-body p-4">
+                        <h3 class="card-title text-center mb-4">Enroll in NEET Program</h3>
+                        <form id="neetEnrollmentForm" action="https://formsubmit.co/prabhatkumarsictc7070@gmail.com" method="POST">
+                            <!-- FormSubmit Configuration 
+                            <input type="hidden" name="_subject" value="New NEET Program Enrollment - MPULSE">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_next" value="https://mpulse.org.in/thank-you.html">
+                            <input type="hidden" name="_captcha" value="false">
+
+                            <div class="mb-3">
+                                <label for="fullName" class="form-label required-field">Full Name</label>
+                                <input type="text" class="form-control" id="fullName" name="Full Name" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label required-field">Email</label>
+                                <input type="email" class="form-control" id="email" name="Email" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="phoneNumber" class="form-label required-field">Phone Number</label>
+                                <input type="tel" class="form-control" id="phoneNumber" name="Phone Number" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="currentClass" class="form-label required-field">Current Class</label>
+                                <select class="form-select" id="currentClass" name="Current Class" required>
+                                    <option value="">Select Class</option>
+                                    <option value="Class 6">Class 6</option>
+                                    <option value="Class 7">Class 7</option>
+                                    <option value="Class 8">Class 8</option>
+                                    <option value="Class 9">Class 9</option>
+                                    <option value="Class 10">Class 10</option>
+                                    <option value="Class 11">Class 11</option>
+                                    <option value="Class 12">Class 12</option>
+                                    <option value="Dropper">Dropper</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="currentSchool" class="form-label required-field">Current School/College</label>
+                                <input type="text" class="form-control" id="currentSchool" name="Current School/College" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="requirements" class="form-label">Any specific requirements or questions?</label>
+                                <textarea class="form-control" id="requirements" name="Specific Requirements" rows="3"></textarea>
+                            </div>
+
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-danger btn-lg px-5">Submit Enrollment</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h4>MPULSE CAREER INSTITUTE</h4>
+                    <p>A Step Towards Your Dream Career</p>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/mpulse_career_institute25/?utm_source=qr&igsh=MXNwZ2kydG1uejJmaQ%3D%3D#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Contact Info</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Bengaluru, Karnataka</li>
+                        <li><i class="fas fa-phone me-2"></i> +91 9164428448 or +91 9964476659</li>
+                        <li><i class="fas fa-envelope me-2"></i>mpulseinstitutions@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="medical.html" class="text-white">Medical Program</a></li>
+                        <li><a href="competitive.html" class="text-white">Competitive Exams</a></li>
+                        <li><a href="tuition.html" class="text-white">Tuition Classes</a></li>
+                        <li><a href="index.html#scholarships" class="text-white">Scholarships</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 MPULSE Career Institute. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Form submission handling
+        document.getElementById('medicalForm').addEventListener('submit', function(e) {
+            // Form will be submitted to FormSubmit.co which will email the data
+            // You can add additional client-side validation here if needed
+            alert('Thank you for your application! We will contact you soon.');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Enrollment Form Submission Handler
+// document.getElementById('neetEnrollmentForm')?.addEventListener('submit', async function(e) {
+//     e.preventDefault();
+    
+//     // Validate form
+//     const requiredFields = this.querySelectorAll('[required]');
+//     let isValid = true;
+    
+//     requiredFields.forEach(field => {
+//         if (!field.value.trim()) {
+//             field.classList.add('is-invalid');
+//             isValid = false;
+//         }
+//     });
+    
+//     // Validate email format
+//     const emailField = this.querySelector('[type="email"]');
+//     if (emailField && !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailField.value)) {
+//         emailField.classList.add('is-invalid');
+//         isValid = false;
+//     }
+    
+//     if (!isValid) {
+//         alert('Please fill all required fields correctly');
+//         return;
+//     }
+    
+//     const submitBtn = this.querySelector('button[type="submit"]');
+//     const originalBtnText = submitBtn.innerHTML;
+    
+//     try {
+//         // Show loading state
+//         submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Submitting...';
+//         submitBtn.disabled = true;
+        
+//         // Submit form
+//         const response = await fetch(this.action, {
+//             method: 'POST',
+//             body: new FormData(this)
+//         });
+        
+//         // Show success message
+//         alert('Thank you! Your enrollment form has been submitted successfully.\nWe will contact you shortly.');
+//         this.reset();
+        
+//         // Redirect if _next is set
+//         const nextUrl = this.querySelector('[name="_next"]')?.value;
+//         if (nextUrl) window.location.href = nextUrl;
+        
+//     } catch (error) {
+//         console.log('Form submission logged:', error);
+//         alert('Thank you! Your information has been received.');
+//         this.reset();
+//     } finally {
+//         submitBtn.innerHTML = originalBtnText;
+//         submitBtn.disabled = false;
+//     }
+// });
+
+// // Clear validation on input
+// document.querySelectorAll('#neetEnrollmentForm input, #neetEnrollmentForm select, #neetEnrollmentForm textarea').forEach(element => {
+//     element.addEventListener('input', function() {
+//         if (this.value.trim()) {
+//             this.classList.remove('is-invalid');
+//         }
+//     });
+// });
+    </script>
+</body>
+</html>
